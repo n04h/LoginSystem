@@ -85,7 +85,7 @@ class DB
 
 		$result = $db->execute()->fetchArray(SQLITE3_ASSOC);
 
-		return empty($result) ? false : true;
+		return !empty($result);
 	}
 
 
